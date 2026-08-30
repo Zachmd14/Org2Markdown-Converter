@@ -1,5 +1,13 @@
 * Org to Markdown Converter
 
+** Files structure
+org2md/
+├── src/          → your .c files (implementation)
+├── include/      → your .h files (headers, structs, function prototypes)
+├── tests/        → test .c files and test scripts
+│   └── fixtures/ → sample .org and .md files used for testing
+├── docs/         → man page, design notes, documentation
+└── build/        → compiled .o files (generated, gitignored)
 ** Roadmap
 *** Core
 - Basic Org to Markdown header conversion
