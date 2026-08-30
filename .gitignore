@@ -1,18 +1,82 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
+# === Build Artifacts (C/C++) ===
+# Compiled objects
+*.o
+*.obj
+*.lo
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
 
-# Other files and folders
-.settings/
+# Executables (if you build in the root dir)
+# If you only build to ./bin, you can ignore that folder entirely below
+org2md
+md2org
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+# Build directories
+/bin/
+/build/
+/dist/
+/out/
+/cmake-build-*/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+# === Debugging & Profiling ===
+*.gch        # Precompiled headers
+*.pch
+core         # Core dumps
+core.*
+*.stackdump
+vgcore.*     # Valgrind core dumps
+callgrind.*
+cachegrind.*
+
+# === Dependency Managers / Configs ===
+# Meson
+/builddir/
+/subprojects/
+
+# CMake (usually you don't ignore these, but if you want a clean repo)
+# CMakeLists.txt.user
+# CMakeCache.txt
+# CMakeFiles/
+# Makefile
+
+# === Editors & IDEs ===
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs (Temporary and Auto-save files)
+*~
+\#*\#
+.\#*
+*.eln
+/auto/
+/.emacs.desktop
+/.emacs.desktop.lock
+
+# VS Code (if you don't want to commit workspace settings)
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# CLion / JetBrains
+.idea/
+
+# === OS Generated Files ===
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+.directory
+.Trash-*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/

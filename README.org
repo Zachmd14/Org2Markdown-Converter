@@ -1,0 +1,31 @@
+* Org to Markdown Converter
+
+** Roadmap
+*** Core
+- Basic Org to Markdown header conversion
+- Paragraph handling
+
+*** Blocks
+- Code blocks
+- Lists (flat)
+
+*** Inline
+- Bold, italics, inline code
+- Links
+
+*** Nesting
+- Nested lists
+- Tables
+
+# **Phase 5: Round-Trip**
+
+# - Preserve Org metadata
+# - TODO keywords and tags
+
+# ---
+
+# **Phase 6: Polish**
+
+# - Directory mode
+# - Tests
+# - Man page
