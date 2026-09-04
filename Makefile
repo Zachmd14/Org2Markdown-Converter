@@ -20,7 +20,7 @@ TEST_BINS := $(TEST_SRCS:tests/%.c=$(BUILD_DIR)/tests/%)
 
 LIB_OBJS := $(filter-out $(BUILD_DIR)/main.o,$(OBJS))
 
-.PHONY: all clean test todo
+.PHONY: all clean test todo debug
 
 all: $(BIN)
 
@@ -44,6 +44,10 @@ test: $(TEST_BINS)
 
 clean:
 	rm -rf $(BUILD_DIR) $(BIN)
+
+debug:
+	$(MAKE) clean
+	$(MAKE) CFLAGS="-std=c99 -Wall -Wextra -O0 -g"
 
 todo:
 	@grep -rn -E "TODO|FIXME" $(SRC_DIR) $(INC_DIR) tests || echo "No TODO/FIXME markers found."
