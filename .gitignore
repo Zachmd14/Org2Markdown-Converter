@@ -80,3 +80,5 @@ cachegrind.*
 Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
+
+.gdb_history
