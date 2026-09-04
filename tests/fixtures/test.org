@@ -1,0 +1,14 @@
+#+TITLE: Test file for org2md
+
+* heading level 1
+** heading level 2
+
+inline code ~here~
+code block
+#+begin_src test
+here
+#+end_src
+
+___
+
+and now paragraph wiht *bold*, /underlined / italic/
