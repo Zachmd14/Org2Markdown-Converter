@@ -4,10 +4,7 @@
 
 #include <stdio.h>
 
-/* void readOrgFile(FILE *file); */
+int openAndReadOrgFile(FILE *file, char *argv[]);
 
-
-// FILE *fopen(char *filename, char *mode);
-// Option for file opening mode : "rb", "wb", "ab", "rb+", "r+b", "wb+", "w+b", "ab+", "a+b"
 
 #endif
