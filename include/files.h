@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int openAndReadOrgFile(FILE *file, char *argv[]);
+int readOrgFile(FILE *file, char *argv[]);
 
 
 #endif

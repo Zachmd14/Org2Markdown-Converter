@@ -5,7 +5,7 @@
 
 #define MAX_FILENAME_SIZE 64
 
-int openAndReadOrgFile(FILE *file, char *argv[]) {
+int readOrgFile(FILE *file, char *argv[]) {
 
   // copy command line argument to string variable 'filename'
   char filename[MAX_FILENAME_SIZE];
@@ -18,9 +18,21 @@ int openAndReadOrgFile(FILE *file, char *argv[]) {
   file = fopen(filename, "r");
   if (file == NULL) {
     printf("ERROR : File dont exist");
-    return -1;
+    return 1;
   }
 
+  // load first line of filename
+  char buff[500];
+  /* fgets(buff, sizeof(buff), file); */
+  printf("%s content is :\n\n", filename);
+  while (fgets(buff, sizeof(buff), file) != NULL) {
+    printf("%s", buff);
+  }
+
+  printf("\n");
+
+  // free memory
   fclose(file);
   return 0;
 }
+

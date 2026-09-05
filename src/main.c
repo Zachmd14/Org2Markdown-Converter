@@ -8,18 +8,17 @@ int main(int argc, char *argv[]) {
   // argv -> array of arguments
 
   if (argc == 2) {
-    // if one argument is passed    
+    // if one argument is passed
     FILE *file = NULL;
-    openAndReadOrgFile(file, argv);
+    readOrgFile(file, argv);
 
   } else if (argc > 2) {
-    // if more than one argument is passed    
+    // if more than one argument is passed
     printf("Too many arguments supplied.\n");
   } else {
     // if no argument is passed
     printf("You need to specify a file name.\n");
   }
 
-  return 0;  
-
+  return 0;
 }
